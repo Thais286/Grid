@@ -12,8 +12,38 @@
             display: grid;
 
             grid-template-columns: auto auto auto; /* faz 3 colunas com 3 blocos em cada*/
+
             grid-template-rows: auto auto auto; /* faz 3 linhas*/
+
             gap: 5px; /* espaço entre os quadrados*/
+
+            align-items: normal; /* aling-itens deixa as linhas na horizontal*/
+
+            justify-items: normal; /* justify-itens deixa as linhas na vertical*/
+
+            align-content: normal; /* align-content move todas as linhas na horizontal ,  move todo o container  */
+
+            justify-content: normal;
+            /* justify-content move todas as linhas na vertical move todo o container */
+
+            /* no lugar de normal quando vc usa  space-----: 
+        
+            ; No align-content**space-between** ele cola aprimeira linha em cima outra no meio e a outra colada em baixo
+            
+
+             ; No align-content**space-evenly** deixa um espaço em cima na primeira linha  no meio ele deixa outro espaço e a linmha do  meio  outro espaço a linha de baixo e embaixo dela outro espaço 
+
+             ; No align-content **space-around** deixa um espaço em cima na primeira linha  no meio ele deixa outro espaço só que mair que o de cima e a linha do  meio depois dela   outro espaço  do mesmo tamnho do anterior a linha de baixo e embaixo dela outro espaço só que menor igual o primeiro
+
+             ----------------------------------------------------------------------------------------------------------------
+
+             No justify-content**space-between** itens na vertical colodo na borda do canto esquerdo um espaço grande linhas verticais no meio um espaço igual o anterior e o restante na vertical colado na borda da direita
+
+             No justify-content**space-evenly** itens na vertical , um espaço grande antes da primeira coluna depois mais um espaço igual ao anterior , outra coluna, mais um espoço igual aos anteriores e a última coluna ,depois dela mais um espaço
+             
+             No justify-content**space-around** itens na vertical , um espaço grande antes da primeira coluna depois mais um espaço só que o dobro do tamanho do anterior , outra coluna, mais um espoço igual ao anterior depois  a última coluna ,depois dela mais um espaço só que igual ao primeiro que é um espaço um pouco menor*/
+             
+            
         }
 
         div.item{
@@ -34,6 +64,8 @@
     <div class="item">E</div>
     <div class="item">F</div>
     <div class="item">G</div>
+    <div class="item">H</div>
+    
 
     </div>
 </body>
