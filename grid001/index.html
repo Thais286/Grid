@@ -11,7 +11,9 @@
             height: 250px;
             display: grid;
 
-            grid-template-columns: 50px;
+            grid-template-columns: auto auto auto; /* faz 3 colunas com 3 blocos em cada*/
+            grid-template-rows: auto auto auto; /* faz 3 linhas*/
+            gap: 5px; /* espaço entre os quadrados*/
         }
 
         div.item{
@@ -22,7 +24,7 @@
 
 </head>
 <body>
-    <div class="container"></div> <!-- div.container para criar automaticamente-->
+    <div class="container"> <!-- div.container para criar automaticamente-->
 
     <!--div.item*7 para criar automaticamente-->
     <div class="item">A</div>
@@ -32,5 +34,7 @@
     <div class="item">E</div>
     <div class="item">F</div>
     <div class="item">G</div>
+
+    </div>
 </body>
 </html>
