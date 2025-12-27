@@ -8,7 +8,6 @@
     <style>
         div.container{
             border: 3px solid blue;
-            height: 250px;
             display: grid;
 
             /*grid-template-columns: auto auto auto; /* faz 3 colunas com 3 blocos em cada*/
@@ -17,24 +16,24 @@
 
             /* no lugar desses grid-template columns e rows auto vc pode simplificar para*/
 
-            grid-template: repeat(3,auto) / repeat(3,auto);
+            grid-template-rows: repeat(3,80px);
 
 
-            gap: 5px; /* espaço entre os quadrados*/
+            grid-template-columns: repeat(3,120px);
 
+            grid-auto-flow: column;/* Os itens passam a ser preenchidos coluna por coluna (de cima para baixo, depois para a direita).*/
 
-            /*NO LUGAR DELES EU POSSO SIMPLIFICAR 
-            align-items: start; 
-            justify-items: center ; PARA*/
+            grid-auto-rows: 80px; /* toda vez que eu acrecentar uma linha ela também tera 80px automáticamente*/
 
-            place-items: start center;
+            grid-auto-columns: 120px; /* toda vez que eu acrecentar uma coluna nova ela também tera 120px automáticamente*/
+
+            gap: 10px; /* espaço entre os quadrados*/
+
+            place-items: normal normal;
+
+            place-content: normal normal;
             
-            
-            /*NO LUGAR DELES EU POSSO SIMPLIFICAR 
-            align-content: space-between; 
-            justify-content: end; PARA*/
-
-            place-content: space-between end;
+             
             
         }
 
@@ -57,6 +56,8 @@
     <div class="item">F</div>
     <div class="item">G</div>
     <div class="item">H</div>
+    <div class="item">I</div>
+    <div class="item">J</div>
     
 
     </div>
