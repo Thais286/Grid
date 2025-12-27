@@ -1,0 +1,67 @@
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 100px); /*significa: 3 linhas cada linha com 100px de altura*/
+    grid-template-columns: repeat(4, 1fr); /*significa: 4 colunas para cada uma com 1fr /1fr divide o espaço igualmente entre as colunas.*/
+}
+
+.caixa1{
+    
+        /*Grid / CONTE AS  LINHAS.*/
+
+        /* 1    2    3    4    5  Esses números são as linhas verticais
+           |    |    |    |    |  
+
+        /* Linha 1 → antes da 1ª coluna
+            Linha 2 → entre coluna 1 e 2
+            Linha 3 → entre coluna 2 e 3
+            Linha 4 → entre coluna 3 e 4
+            Linha 5 → depois da 4ª coluna*/
+
+            /* linhas horizontais
+             _
+             _
+             _
+             _
+            */
+
+
+    background-color: aquamarine; /*define a cor de fundo da caixa.*/
+
+    /*começa na linha horizontal 1 e termina na linha horizontal 2*/
+    grid-row-start: 1; /*Diz em qual linha horizontal a caixa começa. no caso na 1*/
+    grid-row-end: 2; /*Diz em qual linha horizontal a caixa termina.*/
+
+
+    /*começa na linha vertical 1 e termina na linha vertical 5*/
+    grid-column-start: 1; /*A caixa começa na primeira coluna.*/
+    grid-column-end: 5; /*A caixa termina na linha de coluna 5.*/
+}
+
+.caixa2{
+    background-color: rgb(13, 148, 148);
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.caixa3{
+    background-color: rgb(61, 31, 233);
+
+    /*horizontal*/
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+   /* vertical*/
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    
+    /* VC PODE SIMPLIFICAR TUDO COM*/
+    /*grid-area: 2/3 / 4/5;  primeiro os numeros que vem na frente depois os de tras tipo  1|  /|3
+               2| / |4
+    */
+}
+
